@@ -31,9 +31,9 @@ export default {
       this.navigate()
     },
     createNewChat() {
-      //Скидаємо помилки, якщо вони були
+      /** Скидаємо помилки, якщо вони були */
       this.errorMessage = ''
-      //Генеруємо новий чат айді
+      /** Генеруємо новий чат айді */
       const allowedChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
       const length = 10
       this.room = Array.from({ length }, () =>
