@@ -11,6 +11,7 @@ export default {
   },
   methods: {
     navigate() {
+      /** Перевірка на наявність помилок */
       if (this.errorMessage === '') {
         this.$router.push({ name: 'room', params: { id: this.room } })
       }
@@ -19,6 +20,7 @@ export default {
       }
     },
     connectToChat() {
+      /** Перевірка на коректність введеного айді кімнати */
       if (this.room === '') {
         this.errorMessage = 'To connect to an existing chat, enter the chat ID'
       }
