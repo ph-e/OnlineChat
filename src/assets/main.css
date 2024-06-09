@@ -1,0 +1,91 @@
+/* Фон страницы */
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ccffcc;
+    position: relative;
+}
+
+.chat__form {
+    background-color: #b3ffb3;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 60vh;
+    min-height: 100px;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #388E3C;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+button:disabled {
+    background-color: #A5D6A7;
+    color: #E0E0E0;
+    /** курсор неактивний */
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    border: 1px solid #a3d9a5;
+    background-color: #e0f3e0;
+    color: #000;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+    outline: none;
+    margin: 5px;
+}
+
+input:focus {
+    border-color: #6cbf6c;
+    box-shadow: 0 0 5px #6cbf6c;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #92FC92;
+    border-radius: 6px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #6cbf6c;
+}
